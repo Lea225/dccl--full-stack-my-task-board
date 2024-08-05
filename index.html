@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>devchallenges | My Task Board</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+<div class="overlay" id="overlay"></div>
+<section class="main-section">
+    <header>
+        <div>
+            <img src="images/Logo.svg" alt="Logo">
+            <h1>My Task Board</h1>
+            <img src="images/Edit_duotone.svg" alt="Edit_duotone">
+        </div>
+        <p>Tasks to keep organised</p>
+    </header>
+    <main id="task-container">
+        <div class="task progress" data-task-id="1">
+            <img class="clock icon" src="images/alarm-clock.png" alt="alarm-clock">
+            <div>
+                <h2>Task in Progress</h2>
+            </div>
+            <img class="last-icon time-atack" src="images/Time_atack_duotone.svg" alt="Time_atack_duotone">
+        </div>
+
+        <div class="task completed" data-task-id="2">
+            <img class="dumbbells icon" src="images/dumbbell.png" alt="dumbbells">
+            <div>
+                <h2>Task Completed</h2> 
+            </div>
+            <img class="last-icon done" src="images/Done_round_duotone.svg" alt="Done_round_duotone">
+        </div>
+
+        <div class="task wontdo" data-task-id="3">
+            <img class="tea icon" src="images/tea.png" alt="tea-icon">
+            <div>
+                <h2>Task Won’t Do</h2>  
+            </div>
+            <img class="last-icon close" src="images/close_ring_duotone.svg" alt="close_ring_duotone">
+        </div>
+
+        <div class="task todo" data-task-id="4">
+            <img class="books icon" src="images/stack-of-books.png" alt="books">
+            <div>
+                <h2>Task To Do</h2>  
+                <p class="task-description">Work on a Challenge on devchallenges.io,<br>learn TypeScript</p>
+            </div>
+        </div>
+
+        <div class="add-div" id="add-task">
+            <img class="add-icon icon" src="images/Add_round_duotone.svg" alt="books">
+            <h2>Add new task</h2>  
+        </div>
+    </main>
+    <section class="task-details" id="task-details">
+        <div class="details-container">
+            <div class="details-header">
+                <h2>Task details</h2>
+                <img class="icon-close" src="images/close_ring_duotone-1.svg" alt="close_ring_duotone-1">
+            </div>
+            <form id="task-form">
+                <div>
+                    <label for="name">Task name</label>
+                    <input id="task-name" type="text" placeholder="Enter the task name...">
+                </div>
+                <div>
+                    <label for="description">Description</label>
+                    <textarea id="task-description" placeholder="Enter a short description"></textarea>
+                </div>
+            </form>
+            <label for="icons">Icon</label>
+            <div class="icons" id="icon-choices">
+                <img class="choice-icon laptop-icon" src="images/self-employed.png" alt="laptop-icon">
+                <img class="choice-icon message-icon" src="images/message.png" alt="message-icon">
+                <img class="tea-icon" src="images/tea.png" alt="tea-icon">
+                <img class="choice-icon dumbbell-icon" src="images/dumbbell.png" alt="dumbbell-icon">
+                <img class="choice-icon books-icon" src="images/stack-of-books.png" alt="books-icon">
+                <img class="choice-icon alarm-icon" src="images/alarm-clock.png" alt="alarm-icon">
+            </div>
+            
+            <div class="status-div">
+                <label for="status-div">Status</label>
+                <div class="status-flex">
+                    <div class="status-progress">
+                        <div>
+                            <img class="icon time-atack" src="images/Time_atack_duotone.svg" alt="Time_atack_duotone">
+                            <h3>In Progress</h3> 
+                        </div>
+                        <img class="checkmark" src="images/Done_round.svg" alt="done">
+                    </div> 
+                    <div class="status-completed">
+                        <div>
+                            <img class="icon done" src="images/Done_round_duotone.svg" alt="Done_round_duotone">
+                            <h3>Completed</h3>
+                        </div>  
+                        <img class="checkmark" src="images/Done_round.svg" alt="done">
+                    </div>
+                </div>
+                    <div class="status-wontdo">
+                        <div>
+                            <img class="icon close" src="images/close_ring_duotone.svg" alt="close_ring_duotone">
+                            <h3>Won’t Do</h3> 
+                        </div>
+                        <img class="checkmark" src="images/Done_round.svg" alt="done"> 
+                    </div>
+            </div>
+            <div class="details-footer">
+                <button type="button" class="delete-btn" id="delete-task">Delete <img src="images/Trash.svg" alt="Trash"></button>
+                <button  type="submit" class="save-btn">Save <img src="images/Done_round.svg" alt="Done_round"></button>
+            </div>
+        </div>
+    </section>
+</section>
+</body>
+</html>
